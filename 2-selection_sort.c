@@ -21,15 +21,16 @@ void selection_sort(int *array, size_t size)
 		/*  swap = 0; to show that no swap happens here */
 		for (j = i + 1; j < size; j++)
 		{
-			if (array[i] > array[j])
+			if (array[j] < array[i])
 			{
 				int temp = array[i];
 
 				array[i] = array[j];
 				array[j] = temp;
 				/* swap = 1; shows that swap happened here */
+
+				print_array(array, size);
 			}
 		}
-		print_array(array, size);
 	}
 }
