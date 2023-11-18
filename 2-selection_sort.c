@@ -28,8 +28,8 @@ void selection_sort(int *array, size_t size)
 				array[i] = array[j];
 				array[j] = temp;
 				/* swap = 1; shows that swap happened here */
-				print_array(array, size);
 			}
 		}
+		print_array(array, size);
 	}
 }
