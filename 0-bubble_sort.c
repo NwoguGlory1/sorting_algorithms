@@ -8,7 +8,7 @@
  * @array: pointer to the function you need to use.
  * @size: size of the array
  * Return: ascending order of an array of integers
- *
+ * NIL if size is < 2
  */
 void bubble_sort(int *array, size_t size)
 {
@@ -17,7 +17,7 @@ void bubble_sort(int *array, size_t size)
 	size_t i;
 	size_t j;
 
-	if (array == NULL || size < 2)
+	if (size < 2)
 		return;
 
 	for (i = 0; i < size - 1; i++)
