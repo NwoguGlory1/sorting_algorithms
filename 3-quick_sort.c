@@ -70,6 +70,7 @@ void quicksort(int *array, int min, int max, size_t size)
 /**
  * quick_sort -  function that sorts an array of integers
  * in ascending order using the Quick sort algorithm Lomuto partition scheme
+ * that always takes the last element as the pivot
  * @array: array of integers
  * @size: size of the array
  *
