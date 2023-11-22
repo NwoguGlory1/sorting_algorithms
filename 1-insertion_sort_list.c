@@ -42,8 +42,8 @@ void insertion_sort_list(listint_t **list)
 	 listint_t *current, *trail_back, *aux;
 
 	if (!list || !(*list) || (!((*list)->prev) && !((*list)->next)))
-
 		return;
+
 	current = *list;
 	while (current && current->next)
 	{
@@ -52,7 +52,8 @@ void insertion_sort_list(listint_t **list)
 			aux = current;
 			swap_nodes(&aux, list);
 			print_list(*list);
-			current = aux;
+
+			current = *list;
 			trail_back = aux;
 
 			while (trail_back && trail_back->prev)
@@ -71,4 +72,3 @@ void insertion_sort_list(listint_t **list)
 		current = current->next;
 	}
 }
-
